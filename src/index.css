@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Color */
+  --midnight-green: #014e56;
+  --light-color: #f67e7e;
+  --white-color: #fff;
+  /* Secondary Color */
+  --rapture-blue: #79c8c7;
+  --police-blue: #2c6269;
+  --deep-jungle-green: #004047;
+  --sacramento-state-green: #012f34;
+  --dark-green: #002529;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Livvic", sans-serif;
+    overflow-x: hidden !important;
+    font-size: 15px;
+    line-height: 25px;
+    background-color: var(--midnight-green);
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3 {
+    color: var(--white-color);
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+ 
+
+  /* section */
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 64px;
+      line-height: 56px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 100px;
+      line-height: 100px;
+    }
+    h2 {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+}
+@layer components {
+  .body1,
+  .body2 {
+    font-weight: 600;
+    color: var(--white-color);
+  }
+  .body1 {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .body2 {
+    /* lg=> fz=15 lh=25 */
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  @media (min-width: 768px) {
+    .body1 {
+      font-size: 18px;
+    }
+  }
 }
