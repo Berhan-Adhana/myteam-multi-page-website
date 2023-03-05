@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
-import { fakeData } from "../utlities/data";
+import { contactFakeData, fakeData } from "../utlities/data";
 import BgPatter1 from "../assets/bg-pattern-contact-2.svg";
 
 const Contact = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
   };
   return (
     <main>
-      <section className="flex flex-col pt-[80px] px-6 md:px-[113px] pb-[88px] md:py-[112px]  gap-y-[56px] lg:flex-row  relative lg:px-[165px] lg:py-[120px] lg:items-center lg:gap-x-[30px] overflow-hidden">
+      <section className="flex flex-col pt-[80px] px-6 md:px-[113px] pb-[88px] md:py-[112px]  gap-y-[56px] lg:flex-row  relative lg:px-[165px] lg:py-[120px] lg:items-center lg:gap-x-[50px] overflow-hidden">
         {/* Hero Title */}
         <div className=" mb-[18px] lg:mb-8 text-center lg:max-w-[540px] ">
           <h1 className=" min-w-[350px]">Contact</h1>
@@ -25,12 +25,12 @@ const Contact = () => {
           </p>
 
           <div className=" flex flex-col mt-10 md:mt-[64px] lg:mt-8 gap-y-12 md:gap-y-8 lg:gap-y-2">
-            {fakeData.map((singleData, index) => {
+            {contactFakeData.map((singleData, index) => {
               return (
-                <article className=" flex flex-1  items-center lg:gap-x-[23px]  justify-center ">
+                <article className=" flex flex-1  items-center lg:gap-x-[23px]  justify-start ">
                   <img
                     src={singleData.icon}
-                    alt="person avator"
+                    alt={singleData.title}
                     className=" "
                   />
                   <div className="text-center md:text-left">
@@ -46,7 +46,7 @@ const Contact = () => {
         </div>
         <form
           action=""
-          className="flex flex-col gap-y-4  items-center justify-center lg:gap-y-6 lg:flex-1"
+          className="flex flex-col gap-y-4  items-start justify-center lg:gap-y-6 lg:flex-1"
         >
           <Input type="text" placeholder="Name" name="name" />
           <Input type="email" placeholder="Email Address" name="email" />
@@ -59,7 +59,14 @@ const Contact = () => {
             className="bg-transparent w-full outline-none resize-none  border-solid border-b-2 placeholder:opacity-[.6] placeholder:mix-blend-normal text-white font-semibold space-x-[-0.115385px]"
             placeholder="message..."
           />
-          <Button secondary>Submit</Button>
+          <Button
+            secondary
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+          >
+            Submit
+          </Button>
         </form>
         <img
           src={BgPatter1}

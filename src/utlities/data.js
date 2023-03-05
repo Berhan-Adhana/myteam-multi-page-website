@@ -141,6 +141,23 @@ export const fakeData = [
         "Our customized platform with in-built analytics helps you manage your distributed teams.",
     },
   ];
+export const contactFakeData = [
+  {
+    icon: IconPerson,
+    title: "Experienced Individuals",
+    description: "The quality of our talent network",
+  },
+  {
+    icon: IconCog,
+    title: "Easy to Implement",
+    description: "Usage & implementation of our software",
+  },
+  {
+    icon: IconChart,
+    title: "Enhanced Productivity",
+    description: "How we help drive innovation",
+  },
+];
 
   // Stories 
    export const storiesData = [

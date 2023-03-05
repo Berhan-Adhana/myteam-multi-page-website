@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
-import Button from "../components/Button";
 import CTA from "../components/CTA";
 import BgPattern1 from "../assets/bg-pattern-about-1-mobile-nav-1.svg";
 import BgPattern2 from "../assets/bg-pattern-about-2-contact-1.svg";
@@ -22,7 +21,7 @@ const About = () => {
           <h1 className="w-full">About</h1>
         </div>
         {/* Hero content */}
-        <p className="body1 flex-1 ">
+        <p className="body1 flex-1 relative  before:hidden lg:before:block before:content-[''] before:absolute before:top-[-70px] before:w-[56px] before:h-1 before:bg-[var(--rapture-blue)]">
           We help companies build dynamic teams made up of top global talent.
           Using our network of passionate professionals we drive innovation and
           deliver incredible outcomes. Talented, diverse teams shape the best
@@ -59,7 +58,7 @@ const About = () => {
                 </div>
                 {/* Show Quotes and social icons */}
                 {open === index && (
-                  <div className="w-full h-full absolute top-0 left-0 text-center z-[999] bg-[var(--sacramento-state-green)] px-4 ">
+                  <div className="w-full h-full absolute top-0 left-0 text-center z-[999] bg-[var(--sacramento-state-green)] px-6 pt-[35px] pb-[63px]">
                     <p className="text-[var(--rapture-blue)] font-bold text-[18px] leading-7 mt-4">
                       {about.name}
                     </p>
@@ -67,20 +66,26 @@ const About = () => {
                       {about.quote}
                     </p>
                     {
-                      <div className="flex items-center justify-center mt-8 gap-x-4 text-white">
-                        <FaFacebookSquare size={24} />
-                        <FaTwitter size={24} />
+                      <div className="flex items-center justify-center gap-x-4 text-white">
+                        <FaFacebookSquare
+                          size={24}
+                          className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"
+                        />
+                        <FaTwitter
+                          size={24}
+                          className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"
+                        />
                       </div>
                     }
                     <button
-                      className="flex z-[100]  rounded-full bg-[var(--rapture-blue)] p-4 absolute bottom-[-23px] left-[50%] translate-x-[-50%]"
+                      className="flex z-[100]  rounded-full bg-[var(--rapture-blue)] hover:bg-[var(--light-color)] transition-colors duration-150 cursor-pointer p-4 absolute bottom-[-23px] left-[50%] translate-x-[-50%]"
                       onClick={() => handleClick(index)}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        className="text-center z-[999]"
+                        className="text-center z-[999] "
                       >
                         <path
                           fill="#FFF"
@@ -94,7 +99,7 @@ const About = () => {
                 {/* <button className="w-[56px] h-[56px] block rounded-full"> */}
                 {open !== index && (
                   <button
-                    className="flex z-[100]  rounded-full bg-[var(--light-color)] p-4 absolute bottom-[-21px] left-[50%] translate-x-[-50%]"
+                    className="flex z-[100]  rounded-full bg-[var(--light-color)] hover:bg-[var(--rapture-blue)] transition-all duration-300 p-4 absolute bottom-[-21px] left-[50%] translate-x-[-50%]"
                     onClick={() => handleClick(index)}
                   >
                     <svg

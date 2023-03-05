@@ -7,6 +7,7 @@ const Button = ({
   primaryLight,
   primaryDark,
   secondary,
+  onClick,
 }) => {
   // Primary
   //  1.Light
@@ -15,7 +16,7 @@ const Button = ({
   let clas;
   if (primaryLight) {
     clas =
-      "bg-transparent border-2 border-white hover:bg-white hover:text-[var( --dark-green)] disabled:opacity-[0.25] disabled:mix-blend-normal";
+      "bg-transparent border-2 border-white hover:bg-white text-white hover:text-[var(--dark-green)] disabled:opacity-[0.25] disabled:mix-blend-normal";
   }
   if (primaryDark) {
     clas =
@@ -23,15 +24,13 @@ const Button = ({
   }
   if (secondary) {
     clas =
-      "bg-white border-2  hover:bg-[var(--rapture-blue)] hover:text-[var(--dark-green)] disabled:opacity-[.25] disabled:mix-blend-normal";
+      "bg-white text-[var(--dark-green)] border-2  hover:bg-[var(--rapture-blue)] hover:text-[var(--dark-green)] hover:border-[var(--rapture-blue)] disabled:opacity-[.25] disabled:mix-blend-normal";
   }
 
   return (
     <button
       disabled={disabled ? true : false}
-      onClick={() => {
-        // console.log("yess");
-      }}
+      onClick={onClick}
       className={` ${clas}  border-solid  cursor-pointer font-bold  border-[2px] py-3 px-8 rounded-full whitespace-nowrap `}
     >
       {children}

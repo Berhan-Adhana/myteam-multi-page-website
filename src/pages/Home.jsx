@@ -16,7 +16,7 @@ const Home = () => {
       <Hero />
       <section className="relative bg-[var(--sacramento-state-green)] px-6 md:px-[98px] py-[64px] md:py-[100px] lg:px-[165px] lg:py-[140px] flex flex-col lg:flex-row lg:gap-x-[125px] ">
         <div className="flex flex-1">
-          <h2 className="  md:text-left  ">
+          <h2 className="  md:text-left   before:content-[''] before:absolute before:top-[32px] before:w-[56px] before:h-1 before:bg-[var(--light-color)] ">
             Build & <br className="sm:block md:hidden lg:hidden " />
             manage <br className="block md:hidden lg:block" />
             distributed <br className="block lg:hidden" />

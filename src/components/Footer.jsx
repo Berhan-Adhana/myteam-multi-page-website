@@ -14,7 +14,7 @@ const Footer = () => {
           <Logo />
           <ul className="flex gap-x-4 ">
             {menus.map((menu, index) => (
-              <li>
+              <li className="hover:text-[var(--light-color)] transition-colors duration-150">
                 <Link to={menu.value}>{menu.name}</Link>
               </li>
             ))}
@@ -26,9 +26,9 @@ const Footer = () => {
             <p>Call Us : 949-833-7432</p>
           </div>
           <div className="flex items-center justify-center mt-8 gap-x-4">
-            <FaFacebookSquare size={24} />
-            <FaPinterestSquare size={24} />
-            <FaTwitter size={24} />
+            <FaFacebookSquare size={24} className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"/>
+            <FaPinterestSquare size={24} className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"/>
+            <FaTwitter size={24} className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"/>
           </div>
           <p className="my-4 opacity-[.6] mix-blend-normal">
             Copyright 2020. All Rights Reserved
@@ -41,9 +41,9 @@ const Footer = () => {
         <div className="flex justify-between items-center lg:gap-x-[125px] ">
           <div className="flex flex-col gap-y-[53px] lg:gap-y-[25px]">
             <Logo />
-            <ul className="flex gap-x-4 ">
+            <ul className="flex gap-x-4  ">
               {menus.map((menu, index) => (
-                <li>
+                <li className="hover:text-[var(--light-color)] transition-colors duration-150">
                   <Link to={menu.value}>{menu.name}</Link>
                 </li>
               ))}
@@ -60,9 +60,15 @@ const Footer = () => {
 
         <div className="flex justify-between items-center lg:flex-col lg:gap-y-[51px]">
           <div className="flex items-center justify-center gap-x-4">
-            <FaFacebookSquare size={24} />
-            <FaPinterestSquare size={24} />
-            <FaTwitter size={24} />
+            <FaFacebookSquare
+              size={24}
+              className="hover:text-[var(--light-color)] cursor-pointer"
+            />
+            <FaPinterestSquare
+              size={24}
+              className="hover:text-[var(--light-color)] cursor-pointer"
+            />
+            <FaTwitter size={24} className="hover:text-[var(--light-color)] cursor-pointer" />
           </div>
           <p className=" opacity-[.6] mix-blend-normal">
             Copyright 2020. All Rights Reserved
