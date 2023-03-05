@@ -68,7 +68,7 @@ const Navbar = () => {
         />
 
         <div
-          className={`absolute w-[75%] bg-[var(--police-blue)] h-screen transition-[right] duration-500 overflow-x-hidden z-[1000] ${
+          className={`fixed w-[75%] bg-[var(--police-blue)] h-screen transition-[right] duration-500 overflow-x-hidden z-[1000] ${
             isSidebarOpen ? "top-0 right-0" : " top-0 right-[-100%]"
           } `}
         >
