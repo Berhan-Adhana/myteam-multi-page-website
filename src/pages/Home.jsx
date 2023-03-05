@@ -2,15 +2,10 @@ import React from "react";
 import Hero from "../components/Hero";
 import IconQuote from "../assets/icon-quotes.svg";
 
-
 import CTA from "../components/CTA";
 import { fakeData, storiesData } from "../utlities/data";
 
 const Home = () => {
- 
-
- 
-
   return (
     <main>
       <Hero />
@@ -26,11 +21,14 @@ const Home = () => {
             one else.
           </h2>
         </div>
-       
+
         <div className=" flex flex-col mt-[56px] md:mt-[64px] lg:mt-0 gap-y-12 md:gap-y-8 ">
           {fakeData.map((singleData, index) => {
             return (
-              <article className=" flex flex-col md:flex-row items-center md:items-start  justify-center ">
+              <article
+                className=" flex flex-col md:flex-row items-center md:items-start  justify-center "
+                key={index}
+              >
                 <img
                   src={singleData.icon}
                   alt="person avator"
@@ -47,7 +45,7 @@ const Home = () => {
           })}
         </div>
       </section>
-      
+
       {/* Stories section */}
       <section className="px-6 pt-[140px] pb-[164px] md:px-[98px] md:py-[100px] lg:px-[165px] lg:py-[140px]">
         <h2 className="text-center   whitespace-nowrap">
@@ -61,7 +59,10 @@ const Home = () => {
         </h2>
         <div className="mt-[84px] flex flex-col lg:flex-row lg:gap-x-[31px] gap-y-12 ">
           {storiesData.map((story, index) => (
-            <article className="flex flex-col text-white justify-center items-center relative gap-y-4 lg:gap-y-6">
+            <article
+              className="flex flex-col text-white justify-center items-center relative gap-y-4 lg:gap-y-6"
+              key={index}
+            >
               <p className="body2 text-center">{story.quote}</p>
               <div className="my-4">
                 <p className=" body1 text-center text-[var(--rapture-blue)] mb-[2px]">

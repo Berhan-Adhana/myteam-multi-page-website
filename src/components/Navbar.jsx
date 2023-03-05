@@ -74,7 +74,12 @@ const Navbar = () => {
         >
           <ul className="flex flex-col justify-center items-center text-[18px] leading-7 font-semibold mt-[60px] ">
             {menus.map((menu, index) => (
-              <li className="text-white cursor-pointer my-8 hover:text-[var(--light-color)] transition-colors duration-150" key={index}>
+              <li
+                className={`text-white cursor-pointer my-2 ${
+                  index === menus.length - 1 ? "mb-12" : ""
+                } hover:text-[var(--light-color)] transition-colors duration-150`}
+                key={index}
+              >
                 <Link to={menu.value}>{menu.name}</Link>
               </li>
             ))}

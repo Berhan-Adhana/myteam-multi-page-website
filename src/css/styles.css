@@ -689,10 +689,6 @@ h3 {
   right: -100%;
 }
 
-.right-\[-100px\]{
-  right: -100px;
-}
-
 .right-\[25px\]{
   right: 25px;
 }
@@ -709,12 +705,12 @@ h3 {
   top: -20px;
 }
 
-.z-10{
-  z-index: 10;
-}
-
 .z-\[-100\]{
   z-index: -100;
+}
+
+.z-\[1000\]{
+  z-index: 1000;
 }
 
 .z-\[100\]{
@@ -723,18 +719,6 @@ h3 {
 
 .z-\[999\]{
   z-index: 999;
-}
-
-.z-0{
-  z-index: 0;
-}
-
-.z-\[\]{
-  z-index: ;
-}
-
-.z-\[1000\]{
-  z-index: 1000;
 }
 
 .mx-4{
@@ -752,14 +736,18 @@ h3 {
   margin-right: auto;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-2{
@@ -904,10 +892,6 @@ h3 {
   cursor: pointer;
 }
 
-.cursor-default{
-  cursor: default;
-}
-
 .resize-none{
   resize: none;
 }
@@ -945,6 +929,11 @@ h3 {
           column-gap: 1rem;
 }
 
+.gap-x-\[23px\]{
+  -webkit-column-gap: 23px;
+          column-gap: 23px;
+}
+
 .gap-y-10{
   row-gap: 2.5rem;
 }
@@ -971,11 +960,6 @@ h3 {
 
 .gap-y-\[56px\]{
   row-gap: 56px;
-}
-
-.gap-x-\[23px\]{
-  -webkit-column-gap: 23px;
-          column-gap: 23px;
 }
 
 .space-x-\[-0\.115385px\] > :not([hidden]) ~ :not([hidden]){
@@ -1076,11 +1060,6 @@ h3 {
   padding-right: 2.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1126,16 +1105,6 @@ h3 {
   padding-bottom: 88px;
 }
 
-.py-\[\]{
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.py-\[35px\]{
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
 .pb-4{
   padding-bottom: 1rem;
 }
@@ -1160,6 +1129,10 @@ h3 {
   padding-bottom: 56px;
 }
 
+.pb-\[63px\]{
+  padding-bottom: 63px;
+}
+
 .pb-\[88px\]{
   padding-bottom: 88px;
 }
@@ -1180,6 +1153,10 @@ h3 {
   padding-top: 140px;
 }
 
+.pt-\[35px\]{
+  padding-top: 35px;
+}
+
 .pt-\[64px\]{
   padding-top: 64px;
 }
@@ -1190,14 +1167,6 @@ h3 {
 
 .pt-\[88px\]{
   padding-top: 88px;
-}
-
-.pt-\[35px\]{
-  padding-top: 35px;
-}
-
-.pb-\[63px\]{
-  padding-bottom: 63px;
 }
 
 .text-center{
@@ -1256,6 +1225,10 @@ h3 {
   line-height: 48px;
 }
 
+.text-\[var\(--dark-green\)\]{
+  color: var(--dark-green);
+}
+
 .text-\[var\(--light-color\)\]{
   color: var(--light-color);
 }
@@ -1273,24 +1246,8 @@ h3 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\]{
-  color: ;
-}
-
-.text-\[var\(\)\]{
-  color: var();
-}
-
-.text-\[var\(--dark-green\)\]{
-  color: var(--dark-green);
-}
-
 .opacity-\[\.6\]{
   opacity: .6;
-}
-
-.opacity-0{
-  opacity: 0;
 }
 
 .mix-blend-normal{
@@ -1308,34 +1265,16 @@ h3 {
   transition-duration: 150ms;
 }
 
-.transition-colors{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-opacity{
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-150{
@@ -1346,8 +1285,8 @@ h3 {
   transition-duration: 300ms;
 }
 
-.duration-200{
-  transition-duration: 200ms;
+.duration-500{
+  transition-duration: 500ms;
 }
 
 :root {
@@ -1424,20 +1363,12 @@ h3 {
   content: var(--tw-content);
 }
 
-.hover\:border:hover{
-  border-width: 1px;
-}
-
-.hover\:border-0:hover{
-  border-width: 0px;
-}
-
-.hover\:border-none:hover{
-  border-style: none;
-}
-
 .hover\:border-\[var\(--rapture-blue\)\]:hover{
   border-color: var(--rapture-blue);
+}
+
+.hover\:bg-\[var\(--light-color\)\]:hover{
+  background-color: var(--light-color);
 }
 
 .hover\:bg-\[var\(--rapture-blue\)\]:hover{
@@ -1453,37 +1384,17 @@ h3 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[var\(--light-color\)\]:hover{
-  background-color: var(--light-color);
-}
-
 .hover\:text-\[var\(--dark-green\)\]:hover{
   color: var(--dark-green);
-}
-
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[var\(\)\]:hover{
-  color: var();
 }
 
 .hover\:text-\[var\(--light-color\)\]:hover{
   color: var(--light-color);
 }
 
-.hover\:text-\[\]:hover{
-  color: ;
-}
-
-.hover\:text-\[var\]:hover{
-  color: var;
-}
-
-.hover\:text-\[var\(--\)\]:hover{
-  color: var(--);
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .disabled\:border-white:disabled{
@@ -1688,11 +1599,6 @@ h3 {
             column-gap: 125px;
   }
 
-  .lg\:gap-x-\[23px\]{
-    -webkit-column-gap: 23px;
-            column-gap: 23px;
-  }
-
   .lg\:gap-x-\[260px\]{
     -webkit-column-gap: 260px;
             column-gap: 260px;
@@ -1706,6 +1612,11 @@ h3 {
   .lg\:gap-x-\[31px\]{
     -webkit-column-gap: 31px;
             column-gap: 31px;
+  }
+
+  .lg\:gap-x-\[50px\]{
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
   }
 
   .lg\:gap-y-2{
@@ -1722,11 +1633,6 @@ h3 {
 
   .lg\:gap-y-\[51px\]{
     row-gap: 51px;
-  }
-
-  .lg\:gap-x-\[50px\]{
-    -webkit-column-gap: 50px;
-            column-gap: 50px;
   }
 
   .lg\:px-\[165px\]{

@@ -28,16 +28,16 @@ const Contact = () => {
           <div className=" flex flex-col mt-10 md:mt-[64px] lg:mt-8 gap-y-12 md:gap-y-8 lg:gap-y-2">
             {contactFakeData.map((singleData, index) => {
               return (
-                <article className=" flex flex-1  items-center lg:gap-x-[23px]  justify-start gap-x-[23px] " key={index}>
+                <article
+                  className=" flex flex-1  items-center  justify-start gap-x-[23px] "
+                  key={index}
+                >
                   <img
                     src={singleData.icon}
                     alt={singleData.title}
-                    className=" "
+                    
                   />
                   <div className="text-center md:text-left">
-                    <h3 className="text-[var(--light-color)] ">
-                      {singleData.title}
-                    </h3>
                     <p className=" body2 flex-1 ">{singleData.description}</p>
                   </div>
                 </article>

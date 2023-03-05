@@ -12,12 +12,10 @@ import Gardian from "../assets/logo-the-guardian.png";
 import Post from "../assets/logo-jakarta-post.png";
 import Verge from "../assets/logo-the-verge.png";
 
-// 
+//
 import Kayda from "../assets/avatar-kady.jpg";
 import Aiysha from "../assets/avatar-aiysha.jpg";
 import Arthur from "../assets/avatar-arthur.jpg";
-
-
 
 import IconPerson from "../assets/icon-person.svg";
 import IconChart from "../assets/icon-chart.svg";
@@ -120,66 +118,63 @@ export const clientCompanies = [
   },
 ];
 
-//  
+//
 export const fakeData = [
-    {
-      icon: IconPerson,
-      title: "Experienced Individuals",
-      description:
-        "Our network is made up of highly experienced professionals who are passionate about what they do.",
-    },
-    {
-      icon: IconCog,
-      title: "Easy to Implement",
-      description:
-        "Our processes have been refined over years of implementation meaning our teams always deliver.",
-    },
-    {
-      icon: IconChart,
-      title: "Enhanced Productivity",
-      description:
-        "Our customized platform with in-built analytics helps you manage your distributed teams.",
-    },
-  ];
-export const contactFakeData = [
   {
     icon: IconPerson,
     title: "Experienced Individuals",
-    description: "The quality of our talent network",
+    description:
+      "Our network is made up of highly experienced professionals who are passionate about what they do.",
   },
   {
     icon: IconCog,
     title: "Easy to Implement",
-    description: "Usage & implementation of our software",
+    description:
+      "Our processes have been refined over years of implementation meaning our teams always deliver.",
   },
   {
     icon: IconChart,
     title: "Enhanced Productivity",
+    description:
+      "Our customized platform with in-built analytics helps you manage your distributed teams.",
+  },
+];
+export const contactFakeData = [
+  {
+    icon: IconPerson,
+    description: "The quality of our talent network",
+  },
+  {
+    icon: IconCog,
+    description: "Usage & implementation of our software",
+  },
+  {
+    icon: IconChart,
     description: "How we help drive innovation",
   },
 ];
 
-  // Stories 
-   export const storiesData = [
-     {
-       quote:
-         " “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”",
-       author: "Kady Baker",
-       role: "Product Manager at Bookmark",
-       image: Kayda,
-     },
-     {
-       quote:
-         "We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!",
-       author: "Aiysha Reese",
-       role: "Founder of Manage",
-       image: Aiysha,
-     },
-     {
-       quote:
-         "Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.",
-       author: "Arthur Clarke",
-       role: "Co-founder of MyPhysio",
-       image: Arthur,
-     },
-   ];
+// Stories
+export const storiesData = [
+  {
+    quote:
+      " “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”",
+    author: "Kady Baker",
+    role: "Product Manager at Bookmark",
+    image: Kayda,
+  },
+  {
+    quote:
+      "We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!",
+    author: "Aiysha Reese",
+    role: "Founder of Manage",
+    image: Aiysha,
+  },
+  {
+    quote:
+      "Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.",
+    author: "Arthur Clarke",
+    role: "Co-founder of MyPhysio",
+    image: Arthur,
+  },
+];
