@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop */}
-      <nav className="hidden md:flex justify-between px-10 pt-12 lg:px-[165px] lg:pt-12 items-center ">
+      <nav className="hidden md:flex justify-between px-10 pt-12 xl:px-[165px] xl:pt-12 items-center ">
         <ul className="flex justify-between items-center text-[18px] leading-7 font-semibold">
           <Logo />
           {menus.map((menu, index) => (

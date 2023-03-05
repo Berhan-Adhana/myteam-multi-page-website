@@ -15,13 +15,13 @@ const About = () => {
   };
   return (
     <main>
-      <section className="flex pt-[80px] px-6 pb-[108px] flex-col  lg:flex-row  relative lg:px-[165px] lg:py-[140px]  lg:gap-x-[30px] overflow-hidden">
+      <section className="flex pt-[80px] px-6 pb-[108px] flex-col  xl:flex-row  relative xl:px-[165px] xl:py-[140px]  xl:gap-x-[30px] overflow-hidden">
         {/* Hero Title */}
-        <div className=" mb-[18px]  lg:text-left min-w-[350px]">
-          <h1 className="w-full">About</h1>
+        <div className=" mb-[18px]  xl:text-left min-w-[350px]">
+          <h1 className="w-full text-center">About</h1>
         </div>
         {/* Hero content */}
-        <p className="body1 flex-1 relative  before:hidden lg:before:block before:content-[''] before:absolute before:top-[-70px] before:w-[56px] before:h-1 before:bg-[var(--rapture-blue)]">
+        <p className="body1 flex-1 relative  before:hidden xl:before:block before:content-[''] before:absolute before:top-[-70px] before:w-[56px] before:h-1 before:bg-[var(--rapture-blue)]">
           We help companies build dynamic teams made up of top global talent.
           Using our network of passionate professionals we drive innovation and
           deliver incredible outcomes. Talented, diverse teams shape the best
@@ -34,9 +34,9 @@ const About = () => {
         />
       </section>
 
-      <section className="bg-[var(--deep-jungle-green)] px-6 pt-[88px] pb-[116px] md:pb-[128px] md:pt-[100px] lg:py-[140px] lg:px-[165px] relative overflow-hidden">
+      <section className="bg-[var(--deep-jungle-green)] px-6 pt-[88px] pb-[116px] md:pb-[128px] md:pt-[100px] xl:py-[140px] xl:px-[165px] relative overflow-hidden">
         <h2 className="text-center">Meet the directors</h2>
-        <div className="grid grid-cols-1 gap-y-6 md:gap-y-12 md:grid-cols-2 lg:grid-cols-3 md:gap-x-[11px]  pt-12 md:pt-[64px]">
+        <div className="grid grid-cols-1 gap-y-6 md:gap-y-12 md:grid-cols-2 xl:grid-cols-3 md:gap-x-[11px]  pt-12 md:pt-[64px]">
           {aboutData.map((about, index) => {
             return (
               <article
@@ -137,7 +137,7 @@ const About = () => {
       </section>
 
       {/* Clients section */}
-      <section className="bg-[var(--sacramento-state-green)] px-6  py-[88px] md:px-10 md:py-[100px] lg:px-[165px] lg:py-[140px]">
+      <section className="bg-[var(--sacramento-state-green)] px-6  py-[88px] md:px-10 md:py-[100px] xl:px-[165px] xl:py-[140px]">
         <h2 className="text-white text-center whitespace-nowrap mb-4">
           Some of our clients
         </h2>

@@ -17,29 +17,25 @@ const Contact = () => {
   };
   return (
     <main>
-      <section className="flex flex-col pt-[80px] px-6 md:px-[113px] pb-[88px] md:py-[112px]  gap-y-[56px] lg:flex-row  relative lg:px-[165px] lg:py-[120px] lg:items-center lg:gap-x-[50px] overflow-hidden">
+      <section className="flex flex-col pt-[80px] px-6 md:px-[113px] pb-[88px] md:py-[112px]  gap-y-[56px] xl:flex-row  relative xl:px-[165px] xl:py-[120px] xl:items-center xl:gap-x-[50px] overflow-hidden">
         {/* Hero Title */}
-        <div className=" mb-[18px] lg:mb-8 text-center lg:max-w-[540px] ">
+        <div className=" mb-[18px] xl:mb-8 text-center xl:max-w-[540px] ">
           <h1 className=" min-w-[350px]">Contact</h1>
-          <p className="font-bold text-[32px] leading-[48px] text-center text-[var(--light-color)] lg:mt-4">
+          <p className="font-bold text-[32px] leading-[48px] text-center text-[var(--light-color)] xl:mt-4">
             Ask us about
           </p>
 
-          <div className=" flex flex-col mt-10 md:mt-[64px] lg:mt-8 gap-y-12 md:gap-y-8 lg:gap-y-2">
+          <div className=" flex flex-col mt-10 md:mt-[64px] xl:mt-8 gap-y-12 md:gap-y-8 xl:gap-y-2">
             {contactFakeData.map((singleData, index) => {
               return (
                 <article
                   className=" flex flex-1  items-center  justify-start gap-x-[23px] "
                   key={index}
                 >
-                  <img
-                    src={singleData.icon}
-                    alt={singleData.title}
-                    
-                  />
-                  <div className="text-center md:text-left">
-                    <p className=" body2 flex-1 ">{singleData.description}</p>
-                  </div>
+                  <img src={singleData.icon} alt={singleData.title} />
+                  <p className=" body2 flex-1 text-left">
+                    {singleData.description}
+                  </p>
                 </article>
               );
             })}
@@ -47,7 +43,7 @@ const Contact = () => {
         </div>
         <form
           action=""
-          className="flex flex-col gap-y-4  items-start justify-center lg:gap-y-6 lg:flex-1"
+          className="flex flex-col gap-y-4  items-start justify-center xl:gap-y-6 xl:flex-1"
         >
           <Input type="text" placeholder="Name" name="name" />
           <Input type="email" placeholder="Email Address" name="email" />

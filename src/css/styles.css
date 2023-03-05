@@ -1169,6 +1169,10 @@ h3 {
   padding-top: 88px;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1494,6 +1498,11 @@ h3 {
     row-gap: 2rem;
   }
 
+  .md\:gap-x-6{
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1524,6 +1533,11 @@ h3 {
     padding-bottom: 84px;
   }
 
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:pb-\[128px\]{
     padding-bottom: 128px;
   }
@@ -1542,102 +1556,9 @@ h3 {
 }
 
 @media (min-width: 1024px){
-  .lg\:mb-8{
-    margin-bottom: 2rem;
-  }
-
-  .lg\:mt-0{
-    margin-top: 0px;
-  }
-
-  .lg\:mt-4{
-    margin-top: 1rem;
-  }
-
-  .lg\:mt-8{
-    margin-top: 2rem;
-  }
-
-  .lg\:block{
-    display: block;
-  }
-
-  .lg\:hidden{
-    display: none;
-  }
-
-  .lg\:max-w-\[540px\]{
-    max-width: 540px;
-  }
-
-  .lg\:flex-1{
-    flex: 1 1 0%;
-  }
-
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row{
-    flex-direction: row;
-  }
-
-  .lg\:flex-col{
-    flex-direction: column;
-  }
-
-  .lg\:items-center{
-    align-items: center;
-  }
-
-  .lg\:justify-between{
-    justify-content: space-between;
-  }
-
-  .lg\:gap-x-\[125px\]{
-    -webkit-column-gap: 125px;
-            column-gap: 125px;
-  }
-
   .lg\:gap-x-\[260px\]{
     -webkit-column-gap: 260px;
             column-gap: 260px;
-  }
-
-  .lg\:gap-x-\[30px\]{
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
-  }
-
-  .lg\:gap-x-\[31px\]{
-    -webkit-column-gap: 31px;
-            column-gap: 31px;
-  }
-
-  .lg\:gap-x-\[50px\]{
-    -webkit-column-gap: 50px;
-            column-gap: 50px;
-  }
-
-  .lg\:gap-y-2{
-    row-gap: 0.5rem;
-  }
-
-  .lg\:gap-y-6{
-    row-gap: 1.5rem;
-  }
-
-  .lg\:gap-y-\[25px\]{
-    row-gap: 25px;
-  }
-
-  .lg\:gap-y-\[51px\]{
-    row-gap: 51px;
-  }
-
-  .lg\:px-\[165px\]{
-    padding-left: 165px;
-    padding-right: 165px;
   }
 
   .lg\:px-\[263px\]{
@@ -1645,35 +1566,130 @@ h3 {
     padding-right: 263px;
   }
 
-  .lg\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .lg\:py-\[120px\]{
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  .lg\:py-\[140px\]{
-    padding-top: 140px;
-    padding-bottom: 140px;
-  }
-
   .lg\:py-\[76px\]{
     padding-top: 76px;
     padding-bottom: 76px;
   }
+}
 
-  .lg\:pt-12{
+@media (min-width: 1280px){
+  .xl\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .xl\:mt-0{
+    margin-top: 0px;
+  }
+
+  .xl\:mt-4{
+    margin-top: 1rem;
+  }
+
+  .xl\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .xl\:block{
+    display: block;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
+
+  .xl\:max-w-\[540px\]{
+    max-width: 540px;
+  }
+
+  .xl\:flex-1{
+    flex: 1 1 0%;
+  }
+
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:flex-col{
+    flex-direction: column;
+  }
+
+  .xl\:items-center{
+    align-items: center;
+  }
+
+  .xl\:justify-between{
+    justify-content: space-between;
+  }
+
+  .xl\:gap-x-\[125px\]{
+    -webkit-column-gap: 125px;
+            column-gap: 125px;
+  }
+
+  .xl\:gap-x-\[30px\]{
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+
+  .xl\:gap-x-\[31px\]{
+    -webkit-column-gap: 31px;
+            column-gap: 31px;
+  }
+
+  .xl\:gap-x-\[50px\]{
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+  }
+
+  .xl\:gap-y-2{
+    row-gap: 0.5rem;
+  }
+
+  .xl\:gap-y-6{
+    row-gap: 1.5rem;
+  }
+
+  .xl\:gap-y-\[25px\]{
+    row-gap: 25px;
+  }
+
+  .xl\:gap-y-\[51px\]{
+    row-gap: 51px;
+  }
+
+  .xl\:px-\[165px\]{
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
+  .xl\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xl\:py-\[120px\]{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .xl\:py-\[140px\]{
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .xl\:pt-12{
     padding-top: 3rem;
   }
 
-  .lg\:text-left{
+  .xl\:text-left{
     text-align: left;
   }
 
-  .lg\:before\:block::before{
+  .xl\:before\:block::before{
     content: var(--tw-content);
     display: block;
   }

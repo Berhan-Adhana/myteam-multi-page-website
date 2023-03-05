@@ -49,9 +49,9 @@ const Footer = () => {
       </div>
 
       {/* Desktop footer */}
-      <div className="hidden md:flex flex-col gap-y-8  px-10 py-[56px] lg:py-12 lg:px-[165px] lg:flex-row lg:justify-between lg:gap-x-[125px]">
-        <div className="flex justify-between items-center lg:gap-x-[125px] ">
-          <div className="flex flex-col gap-y-[53px] lg:gap-y-[25px]">
+      <div className="hidden md:flex flex-col gap-y-8  px-10 py-[56px] xl:py-12 xl:px-[165px] xl:flex-row xl:justify-between xl:gap-x-[125px]">
+        <div className="flex justify-between items-center xl:gap-x-[125px] ">
+          <div className="flex flex-col gap-y-[53px] xl:gap-y-[25px]">
             <Logo />
             <ul className="flex gap-x-4  ">
               {menus.map((menu, index) => (
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center lg:flex-col lg:gap-y-[51px]">
+        <div className="flex justify-between items-center xl:flex-col xl:gap-y-[51px]">
           <div className="flex items-center justify-center gap-x-4">
             <FaFacebookSquare
               size={24}

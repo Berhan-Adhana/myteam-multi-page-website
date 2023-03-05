@@ -9,30 +9,30 @@ const Home = () => {
   return (
     <main>
       <Hero />
-      <section className="relative bg-[var(--sacramento-state-green)] px-6 md:px-[98px] py-[64px] md:py-[100px] lg:px-[165px] lg:py-[140px] flex flex-col lg:flex-row lg:gap-x-[125px] ">
+      <section className="relative bg-[var(--sacramento-state-green)] px-6 md:px-[98px] py-[64px] md:py-[100px] xl:px-[165px] xl:py-[140px] flex flex-col xl:flex-row xl:gap-x-[125px] ">
         <div className="flex flex-1">
           <h2 className="  md:text-left   before:content-[''] before:absolute before:top-[32px] before:w-[56px] before:h-1 before:bg-[var(--light-color)] ">
-            Build & <br className="sm:block md:hidden lg:hidden " />
-            manage <br className="block md:hidden lg:block" />
-            distributed <br className="block lg:hidden" />
+            Build & <br className="sm:block md:hidden xl:hidden " />
+            manage <br className="block md:hidden xl:block" />
+            distributed <br className="block xl:hidden" />
             teams
-            <br className="hidden lg:block" /> like no{" "}
+            <br className="hidden xl:block" /> like no{" "}
             <br className="block md:hidden " />
             one else.
           </h2>
         </div>
 
-        <div className=" flex flex-col mt-[56px] md:mt-[64px] lg:mt-0 gap-y-12 md:gap-y-8 ">
+        <div className=" flex   flex-col mt-[56px] md:mt-[64px] xl:mt-0 gap-y-12 md:gap-y-8 ">
           {fakeData.map((singleData, index) => {
             return (
               <article
-                className=" flex flex-col md:flex-row items-center md:items-start  justify-center "
+                className=" flex md:gap-x-6 flex-col md:flex-row items-center md:items-start   "
                 key={index}
               >
                 <img
                   src={singleData.icon}
-                  alt="person avator"
-                  className="mb-4 md:mr-[23px] "
+                  alt={`${singleData.title} avator`}
+                  className=""
                 />
                 <div className="text-center md:text-left">
                   <h3 className="text-[var(--light-color)] mb-2 md:mb-4 ">
@@ -47,20 +47,20 @@ const Home = () => {
       </section>
 
       {/* Stories section */}
-      <section className="px-6 pt-[140px] pb-[164px] md:px-[98px] md:py-[100px] lg:px-[165px] lg:py-[140px]">
+      <section className="px-6 pt-[140px] pb-[164px] md:px-[98px] md:py-[100px] xl:px-[165px] xl:py-[140px]">
         <h2 className="text-center   whitespace-nowrap">
           Delivering real <br className="block md:hidden" />
           results for top
           <br className="block  " />
           companies. Some of
           <br className="block md:hidden" /> our{" "}
-          <br className="hidden md:block lg:hidden" />
+          <br className="hidden md:block xl:hidden" />
           <span className="text-[var(--rapture-blue)]">success stories.</span>
         </h2>
-        <div className="mt-[84px] flex flex-col lg:flex-row lg:gap-x-[31px] gap-y-12 ">
+        <div className="mt-[84px] flex flex-col xl:flex-row xl:gap-x-[31px] gap-y-12 ">
           {storiesData.map((story, index) => (
             <article
-              className="flex flex-col text-white justify-center items-center relative gap-y-4 lg:gap-y-6"
+              className="flex flex-col text-white justify-center items-center relative gap-y-4 xl:gap-y-6"
               key={index}
             >
               <p className="body2 text-center">{story.quote}</p>
