@@ -973,6 +973,11 @@ h3 {
   row-gap: 56px;
 }
 
+.gap-x-\[23px\]{
+  -webkit-column-gap: 23px;
+          column-gap: 23px;
+}
+
 .space-x-\[-0\.115385px\] > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(-0.115385px * var(--tw-space-x-reverse));

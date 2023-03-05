@@ -14,7 +14,10 @@ const Footer = () => {
           <Logo />
           <ul className="flex gap-x-4 ">
             {menus.map((menu, index) => (
-              <li className="hover:text-[var(--light-color)] transition-colors duration-150">
+              <li
+                className="hover:text-[var(--light-color)] transition-colors duration-150"
+                key={index}
+              >
                 <Link to={menu.value}>{menu.name}</Link>
               </li>
             ))}
@@ -26,9 +29,18 @@ const Footer = () => {
             <p>Call Us : 949-833-7432</p>
           </div>
           <div className="flex items-center justify-center mt-8 gap-x-4">
-            <FaFacebookSquare size={24} className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"/>
-            <FaPinterestSquare size={24} className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"/>
-            <FaTwitter size={24} className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"/>
+            <FaFacebookSquare
+              size={24}
+              className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"
+            />
+            <FaPinterestSquare
+              size={24}
+              className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"
+            />
+            <FaTwitter
+              size={24}
+              className="hover:text-[var(--light-color)] cursor-pointer transition-colors duration-150"
+            />
           </div>
           <p className="my-4 opacity-[.6] mix-blend-normal">
             Copyright 2020. All Rights Reserved
@@ -43,7 +55,10 @@ const Footer = () => {
             <Logo />
             <ul className="flex gap-x-4  ">
               {menus.map((menu, index) => (
-                <li className="hover:text-[var(--light-color)] transition-colors duration-150">
+                <li
+                  className="hover:text-[var(--light-color)] transition-colors duration-150"
+                  key={index}
+                >
                   <Link to={menu.value}>{menu.name}</Link>
                 </li>
               ))}
@@ -68,7 +83,10 @@ const Footer = () => {
               size={24}
               className="hover:text-[var(--light-color)] cursor-pointer"
             />
-            <FaTwitter size={24} className="hover:text-[var(--light-color)] cursor-pointer" />
+            <FaTwitter
+              size={24}
+              className="hover:text-[var(--light-color)] cursor-pointer"
+            />
           </div>
           <p className=" opacity-[.6] mix-blend-normal">
             Copyright 2020. All Rights Reserved
