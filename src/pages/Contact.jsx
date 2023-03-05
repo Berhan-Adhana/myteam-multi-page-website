@@ -10,6 +10,7 @@ const Contact = () => {
         type={type}
         placeholder={placeholder}
         name={name}
+        aria-labelledby={name}
         className="w-full bg-transparent outline-none border-solid border-b-2 py-3 placeholder:opacity-[.6] placeholder:mix-blend-normal text-white font-semibold space-x-[-0.115385px]"
       />
     );
@@ -56,6 +57,7 @@ const Contact = () => {
             name="message"
             cols="30"
             rows="3"
+            aria-labelledby="message"
             className="bg-transparent w-full outline-none resize-none  border-solid border-b-2 placeholder:opacity-[.6] placeholder:mix-blend-normal text-white font-semibold space-x-[-0.115385px]"
             placeholder="message..."
           />

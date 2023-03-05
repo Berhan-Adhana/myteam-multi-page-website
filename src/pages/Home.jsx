@@ -26,11 +26,7 @@ const Home = () => {
             one else.
           </h2>
         </div>
-        {/* <img
-            src={BgPatternDesktop2}
-            alt=""
-            className="absolute right-[-100px] top-0"
-          /> */}
+       
         <div className=" flex flex-col mt-[56px] md:mt-[64px] lg:mt-0 gap-y-12 md:gap-y-8 ">
           {fakeData.map((singleData, index) => {
             return (
@@ -51,6 +47,7 @@ const Home = () => {
           })}
         </div>
       </section>
+      
       {/* Stories section */}
       <section className="px-6 pt-[140px] pb-[164px] md:px-[98px] md:py-[100px] lg:px-[165px] lg:py-[140px]">
         <h2 className="text-center   whitespace-nowrap">

@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop */}
-      <div className="hidden md:flex justify-between px-10 pt-12 lg:px-[165px] lg:pt-12 items-center ">
+      <nav className="hidden md:flex justify-between px-10 pt-12 lg:px-[165px] lg:pt-12 items-center ">
         <ul className="flex justify-between items-center text-[18px] leading-7 font-semibold">
           <Logo />
           {menus.map((menu, index) => (
@@ -48,10 +48,10 @@ const Navbar = () => {
             Contact
           </Link>
         </Button>
-      </div>
+      </nav>
 
       {/* Mobile */}
-      <div
+      <nav
         ref={sidebarRef}
         className=" flex md:hidden  mx-6 md:mx-10 pt-12 justify-between items-center    "
       >
@@ -99,7 +99,7 @@ const Navbar = () => {
             className="absolute right-0 bottom-0 translate-x-[50%]  "
           />
         </div>
-      </div>
+      </nav>
     </>
   );
 };
