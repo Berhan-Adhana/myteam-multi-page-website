@@ -75,7 +75,7 @@ const Navbar = () => {
           <ul className="flex flex-col justify-center items-center text-[18px] leading-7 font-semibold mt-[60px] ">
             {menus.map((menu, index) => (
               <li className="text-white cursor-pointer my-8 hover:text-[var(--light-color)] transition-colors duration-150">
-                <Link to="/">Home</Link>
+                <Link to={menu.value}>{menu.name}</Link>
               </li>
             ))}
 
@@ -84,7 +84,6 @@ const Navbar = () => {
                 Contact
               </Link>
             </Button>
-            {/* <li className="text-white cursor-pointer">Contact</li> */}
           </ul>
           <AiOutlineClose
             className="absolute top-12 right-[25px] cursor-pointer"
